@@ -1,153 +1,173 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @tutorialsonrequest Sign out
-0
-0 0 tutorialsonrequest/portfolio-template-one
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-portfolio-template-one/index.html
-cf19190  on Oct 7, 2017
- thehstudio portfolio-template-one
-     
-123 lines (123 sloc)  4.82 KB
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<title>theHStudio - Parkour Design</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>I AM DESIGNER- Design Tutorial</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<script type="javascript" src="./mainScript.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
 </head>
-<body>
-	<header>
-		<div id="header-inner">
-			<nav id="nav-normal">
-				<div id="menu-icon">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul>
-					<li class="current"><a href="">HOME</a></li>
-					<li><a href="">ABOUT US</a></li>
-					<li><a href="">PORTFOLIO</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">CONTACT US</a></li>
-				</ul>
-			</nav>
-			<nav id="nav-socials">
-				<ul>
-					<li><a href=""><img src="./img/facebook_icon.png"></a></li>
-					<li><a href=""><img src="./img/twitter_icon.png"></a></li>
-					<li><a href=""><img src="./img/instagram_icon.png"></a></li>
-					<li><a href=""><img src="./img/youtube_icon.png"></a></li>
-					<li><a href=""><img src="./img/pinterest_icon.png"></a></li>
-				</ul>
-			</nav>
+<body onload="carousel()">
+	<!---JS function for animations-->
+	<script>
+		
+	</script>
+
+	<!---Navigation Menu for Socials-->
+	<nav id="socialsNav" onclick="myFunction(this)">
+		<div class="menu-icon">
+			<div class="bar-1"></div>
+			<div class="bar-2"></div>
+			<div class="bar-3"></div>
 		</div>
-	</header>
-<!---End Header Style-->
-	<section id="bodyContainer">
-		<section id="background-container">
-			<div id="bg-one"></div>
-			<div id="bg-two"></div>
-			<div id="bg-three"></div>				
-		</section>
-		<h2>the<b>H</b>Studio</h2>
-		<section id="front-container">
-			<div id="part-one">
-				<h1><b>I AM A DESIGNER</b></h1>
-				<h2>I make wonderful things.</h2>
-				<p>Sed nunc magna, convallis in malesuada id, maximus a nisl. Proin aliquet ultricies dignissim. Phasellus ut ornare odio. Phasellus nec tempus felis. In hac habitasse platea dictumst. Mauris consequat dui vel diam dictum, sit amet ullamcorper orci elementum.</p>
-				<button class="buttonStyle">READ MORE</button>
-			</div>
-			<div id="part-two">
-				<!---Gradient section-->
-			</div>
-			<div id="part-three">
-				<article>
-					<h3>CREATIVE AND PROFESSIONAL</h3>
-					<p>Aliquam dolor lectus, euismod nec ornare vel, feugiat et sapien. Fusce elementum massa tempor mi sodales luctus eu eu massa. Pellentesque pulvinar venenatis ex, eu malesuada magna ullamcorper sit amet. Vivamus in accumsan neque. Aliquam eget tempor massa, egestas ultrices velit. Quisque at eros eget arcu iaculis fringilla. Donec finibus sed libero eget consequat. Phasellus congue, sem vitae dapibus tempus, elit lacus mattis nulla, id varius sapien lacus eu dolor. In blandit ultricies lobortis. Nam vel consectetur lorem. Maecenas velit enim, volutpat molestie elit nec, feugiat vehicula risus.</p>
-					<button class="buttonStyle">READ MORE</button>
-				</article>
-				<aside>
-					<h3>OUR TEAM</h3>
-					<ul>
-						<li>
-							<img src="./img/penguin_face.png">
-							<h4>NAME SURNAME</h4>
-							<h5>Manager</h5>
-							<p>Nulla accumsan, ante quis fringilla congue, felis lacus semper lectus, at sollicitudin velit quam et metus.</p>
-						</li>
-						<li>
-							<img src="./img/penguin_face.png">
-							<h4>NAME SURNAME</h4>
-							<h5>Graphic Designer</h5>
-							<p>Nulla accumsan, ante quis fringilla congue, felis lacus semper lectus, at sollicitudin velit quam et metus.</p>
-						</li>
-						<li>
-							<img src="./img/penguin_face.png">
-							<h4>NAME SURNAME</h4>
-							<h5>Web Design</h5>
-							<p>Nulla accumsan, ante quis fringilla congue, felis lacus semper lectus, at sollicitudin velit quam et metus.</p>
-						</li>
-					</ul>
-				</aside>
-			</div>
-			<div id="part-fourth">
-				<div class="semicircleImg" style="background-color: #b5b5b5; top: -7.5%;"></div>
-				<h3 style="">SELECTED WORK</h3>
-				<div id="buttonContainer">
-					<button>ALL</button>
-					<button>WEB DESIGN</button>
-					<button>LOGO DESIGN</button>
-					<button>BRANDING</button>
-				</div>
-				<div id="imagesContainer">
-					<div id="container-left">
-						<div style="background-image: url('https://static.pexels.com/photos/264635/pexels-photo-264635.jpeg');"></div>
-						<div style="background-image: url('https://static.pexels.com/photos/126637/pexels-photo-126637.jpeg');"></div>
-					</div>
-					<div id="container-right">
-						<div style="background-image: url('https://static.pexels.com/photos/307008/pexels-photo-307008.jpeg');"></div>
-						<div style="background-image: url('https://static.pexels.com/photos/373966/pexels-photo-373966.jpeg');"></div>
-					</div>
-				</div>
-				<div class="semicircleImg" style="background-color: #393336; bottom: -12.5%; box-shadow: inset 1px 10px 5px -3px #222;"></div>
-			</div>
-		</section>
+		<ul class="spaciousFont">
+			<li><a href="#">INSTAGRAM</a></li>
+			<li><a href="#">TWITTER</a></li>
+			<li><a href="#">PINTEREST</a></li>
+			<li><a href="#">FACEBOOK</a></li>
+			<li><a href="#">BLOGLOVIN</a></li>
+		</ul>
+	</nav>
+
+	<!---Heading of the page-->
+	<section id="heading">
+		<div id="headingContainer">
+			<h1>Random<b style="font-family: 'Great Vibes', cursive;"></b> Name</h1>
+			<p class="spaciousFont">Some Random Line</p>
+		</div>
 	</section>
-<!---End of Sections-->
-	<footer id="footer-form">
-		<h4>GET IN TOUCH</h4>
-		<form>
-			<input type="textbox" name="name" placeholder="NAME">
-			<input type="textbox" name="email" placeholder="EMAIL">
-			<input type="textbox" name="message" placeholder="MESSAGE">				
-		</form>
-		<button class="buttonStyle">SUBMIT</button>
-	</footer>
-	<footer id="footerLine">
-		<p>Address Street Amazing, Whatever 50 | Call 9999 0000 76</p>
+
+	<!---JS function for animations-->
+	<script>
+		
+	</script>
+
+	<!---Navigation Menu for Page Navigation-->
+	<nav id="normalNav" onclick="myFunction(this)">
+		<div class="menu-icon">
+			<div class="bar-1"></div>
+			<div class="bar-2"></div>
+			<div class="bar-3"></div>
+		</div>
+		<ul class="spaciousFont">
+			<li><a href="#">MONDAY</a></li>
+			<li><a href="#">TUESDAY</a></li>
+			<li><a href="#">WEDNESDAY</a></li>
+			<li><a href="#">THURSDAY</a></li>
+			<li><a href="#">FRIDAY</a></li>
+			<li><a href="#">SATURDAY</a></li>
+			<li><a href="#">SUNDAY</a></li>
+		</ul>
+	</nav>
+
+	<!---Main Image Section-->
+	<section id="mainImages">
+		<div id="imagesContainer">
+<!---			<img class="mySlider" src="./img/slide-img-1.jpg">
+			<img class="mySlider" src="./img/slide-img-2.jpg">
+			<img class="mySlider" src="./img/slide-img-3.jpg">-->
+			<img class="mySlider" src="./img/coffee-1.jpg">
+			<img class="mySlider" src="./img/coffee-2.jpg">
+			<img class="mySlider" src="./img/coffee-3.jpg">
+		</div>
+		<div id="headingContainer-inImage">
+			<h2>Have A Nice Weekend</h2>
+			<p class="spaciousFont">READ MORE</p>
+			<span class="line-small"></span>
+		</div>
+	</section>
+
+	
+
+	<!---Subscribe Form Section-->
+	<section id="subscribeForm">
+		<div id="subscribeFormContainer">
+			<h2>Get On List</h2>
+			<form>
+				<input type="textbox" name="username" placeholder="Name">
+				<input type="textbox" name="email" placeholder="Email">
+				<button class="spaciousFont">SUBSCRIBE</button>
+			</form>
+		</div>
+	</section>
+
+	<!---3 pictures section-->
+	<section id="threeImages">
+		<div id="threeImagesContainer">
+			<div>
+				<a href="#"><img src="./img/3img-1.jpg"></a>
+				<h2>MY BLOG</h2>
+			</div>
+			<div>
+				<a href="#"><img src="./img/3img-2.jpg"></a>
+				<h2>MY STORY</h2>
+			</div>
+			<div>
+				<a href="#"><img src="./img/3img-3.jpg"></a>
+				<h2>MY SHOP</h2>
+			</div>
+		<!--	<a href="#"><img src="./img/3img-1.jpg"></a>
+			<a href="#"><img src="./img/3img-2.jpg"></a>
+			<a href="#"><img src="./img/3img-3.jpg"></a>
+			<h2>MY BLOG</h2>
+			<h2>MY STORY</h2>
+			<h2>MY SHOP</h2>-->
+		</div>
+	</section>
+
+	<!---Description section-->
+	<section id="description">
+		<div id="descriptionContainer">
+			<h3>We're passionate about simplicity and international living</h3>
+			<p>Aenean convallis mollis risus, ac ullamcorper est pharetra non. Nunc blandit odio eu porta consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In in sapien venenatis metus pulvinar suscipit et et diam. Aenean pharetra nisi quis finibus suscipit. Sed blandit lorem eu tincidunt iaculis. Curabitur mauris ante, efficitur at tortor at, commodo consequat nibh.</p>
+			<p class="spaciousFont">READ NOW</p>
+			<span class="line-small"></span>
+		</div>
+	</section>
+
+	<!--Miscellaneous Section-->
+	<section id="miscellaneous">
+		<div id="miscellaneousContainer">
+			<div id="imagesBand">
+				<img src="./img/3img-1.jpg">
+				<img src="./img/3img-2.jpg">
+				<img src="./img/3img-3.jpg">
+				<img src="./img/slide-img-1.jpg">
+				<img src="./img/slide-img-2.jpg">
+				<img src="./img/slide-img-3.jpg">
+				<img src="./img/slide-img-1.jpg">
+				<img src="./img/3img-3.jpg">
+			</div>
+			<div class="boxes" id="box-1">
+				<h4 class="spaciousFont">LATEST PORTS</h4>
+				<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In in sapien venenatis metus pulvinar suscipit et et diam. Aenean pharetra nisi quis finibus suscipit.</p>
+			</div>
+			<div class="boxes" id="box-2">
+				<h4 class="spaciousFont">ABOUT</h4>
+				<p>Nunc blandit odio eu porta consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In in sapien venenatis metus pulvinar suscipit et et diam. Aenean pharetra nisi quis finibus suscipit.</p>
+			</div>
+			<div class="boxes" id="box-3">
+				<div id="part-1">
+					<h4 class="spaciousFont">GET ON LIST</h4>
+					<form>
+						<input type="textbox" name="email" placeholder="Email Address">
+						<button class="spaciousFont">SUBSCRIBE</button>
+					</form>
+				</div>
+				<div id="part-2">
+					<ul>
+						<li><a href="#"><img src="./img/facebook_icon.png"></a></li>
+						<li><a href="#"><img src="./img/youtube_icon.png"></a></li>
+						<li><a href="#"><img src="./img/pinterest_icon.png"></a></li>
+						<li><a href="#"><img src="./img/instagram_icon.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!---footer-->
+	<footer>
+		<h4>Address Street Amazing, Whatever 50 | Call 9999 0000 76</h4>
 	</footer>
 </body>
 </html>
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
