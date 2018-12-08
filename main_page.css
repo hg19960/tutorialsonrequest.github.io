@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Section One - Title*/
+#title_name > b:nth-of-type(1) {
+    color: #07B9FC;
+}
+#title_name > b:nth-of-type(2) {
+    color: #0047BD;
+}
+#title_name > b:nth-of-type(3) {
+    color: #00AB38;
+}
+#title_container {
+    /* The image used */
+    background-image: url("img/bg.png");
+
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#title_container > div {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#title_name {
+    font-size: 500%;
+    background-color: rgba(250,250,250,0.025);
+}
+#title_container h2 {
+    font-size: 80%;
+    color: #FFFFFF;
+}
+
+/*Content Part*/
+.container {
+    background-color: rgb(20,20,20);
+    box-shadow: 0px 5px 40px rgba(255,255,255,0.25);
+}
+.heading_container {
+    height: auto;
+    width: 100%;
+    padding: 2% 0 2% 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Lato', sans-serif;
+}
+.content_container {
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+.content_container > section {
+    padding: 2.5%;
+    display: inline-block;
+    margin-bottom: 0.5%;
+    border-bottom: 0.75px solid rgba(250,250,250,0.35);
+}
+.content_container div:nth-of-type(1) {
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+.content_container div:nth-of-type(2) {
+    height: 100%;
+    width: 75%;
+    margin: auto 1.5%;
+    float: left;
+}
+.content_container img {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+}
+.content_container h4 {
+    padding: 1%;
+    color: rgba(255,255,255,0.95);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;
+    border-bottom: 0.1px solid rgba(255,255,255,0.1);
+}
+.content_container p {
+    padding: 1%;
+    color: rgba(240,240,255,0.75);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
