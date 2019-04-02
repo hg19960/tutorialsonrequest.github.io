@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("./img/backgroundImage.png");
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+#mobile {
+  display: none;
+}
+
+#titlename {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 2% 0;
+  font-family: 'Pacifico', cursive;
+}
+
+#imageHolder {
+  width: 50%;
+  text-align: center;
+  margin: 5% 0;
+}
+
+#headingHolder {
+  width: 50%;
+  margin: 5% 0;
+  border-left: 1px solid rgba(50,50,50,0.25);
+}
+
+#container {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+#slides {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 7.5%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  display: inline;
+}
+
+#headings {
+  width: 90%;
+  margin-top: 35%; 
+  padding-left: 5%;
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+  display: block;
+}
+#para {
+  width: 90%;
+  padding-left: 5%;
+  font-family: 'Dancing Script', cursive;
+  display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #mobile {
+    display: inline;
+  }
+  section {
+    display: none;
+  }
+  #titlename {
+    display: none;
+  }
+  #mobile > h1 {
+    margin: 60% 5%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+  }
+}
