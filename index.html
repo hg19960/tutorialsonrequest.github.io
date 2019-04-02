@@ -5,6 +5,9 @@
     <meta name="description" content="Get any tutorial on request, anytime, anywhere by sending your request on our tutorialsonrequest@gmail.com.">
     <meta name="keywords" content="tutorial, tutorials-on-request, request, web-design, website, design, templates, sas, sas-university-edition">
     <link rel="stylesheet" type="text/css" href="./main_page.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./mainJS.js"></script>
 </head>
 <body>
     <section id="title_container">
@@ -58,6 +61,14 @@
     </section>
     <footer>
         <span>
+            <form id="requestform" method="post" enctype="multipart/form-data">
+                <span>Max:</span><span id="length_subject"></span><br>
+                <p>SUBJECT</p>
+                <input type="text" name="subject"><br>
+                <p>ABOUT</p>
+                <input type="text" name="about"><br>
+                
+            </form>
             <p>Any Tutorial you want? Mail Us on tutorialsonrequest@gmail.com</p>
             <h5><b>Tutorials</b><b>On</b><b>Request</b>&copy;</h5>
         </span>
