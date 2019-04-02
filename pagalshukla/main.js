@@ -18,6 +18,9 @@ $(document).ready(function() {
     head = document.getElementById("headings");
     para = document.getElementById("para");
     
+    slides.src = "./img/img_" + n + ".png";
+    head.innerHTML = headings[n-1];
+    para.innerHTML = paras[n-1];
     slides.style.display = "none";
     head.style.display = "none";
     para.style.display = "none";
@@ -31,11 +34,10 @@ function slideshow() {
     } else {
         n += 1;
     }
-    slides.src = "./img/img_" + n + ".png";
-    head.innerHTML = headings[n-1];
-    para.innerHTML = paras[n-1];
     slides.style.display = "inline";
     head.style.display = "block";
     para.style.display = "block";
-    console.log(n);
+    slides.src = "./img/img_" + n + ".png";
+    head.innerHTML = headings[n-1];
+    para.innerHTML = paras[n-1];
 }
