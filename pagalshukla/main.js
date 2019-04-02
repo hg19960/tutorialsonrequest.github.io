@@ -22,7 +22,7 @@ $(document).ready(function() {
     head.style.display = "none";
     para.style.display = "none";
 
-    setInterval(slideshow, 1000);
+    setInterval(slideshow, 5000);
 });
 
 function slideshow() {
