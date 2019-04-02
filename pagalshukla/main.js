@@ -18,14 +18,20 @@ $(document).ready(function() {
     head = document.getElementById("headings");
     para = document.getElementById("para");
     
-    slides.src = "./img/img_" + n + ".png";
-    head.innerHTML = headings[n-1];
-    para.innerHTML = paras[n-1];
     slides.style.display = "none";
     head.style.display = "none";
     para.style.display = "none";
+    
+    slides.src = "./img/img_" + n + ".png";
+    head.innerHTML = headings[n-1];
+    para.innerHTML = paras[n-1];
 
-    setInterval(slideshow, 5000);
+    setTimeout(() => {
+        slides.style.display = "inline";
+        head.style.display = "block";
+        para.style.display = "block";
+        setInterval(slideshow, 5000);
+    }, 4000);
 });
 
 function slideshow() {
@@ -34,9 +40,6 @@ function slideshow() {
     } else {
         n += 1;
     }
-    slides.style.display = "inline";
-    head.style.display = "block";
-    para.style.display = "block";
     slides.src = "./img/img_" + n + ".png";
     head.innerHTML = headings[n-1];
     para.innerHTML = paras[n-1];
